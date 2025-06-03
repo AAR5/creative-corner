@@ -2,52 +2,86 @@
 <html>
 <head>
   <title>Creative Corner - Gallery</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 20px;
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      margin: 0;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
+    header, footer {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 700px;
+      margin: auto;
+      overflow: hidden;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Photo Gallery</h1>
-  <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="contact.html">📞 Contact</a>
-    <a href="gallery.html">🖼️ Gallery</a>
-  </nav>
-</header>
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="contact.html">📞 Contact</a>
+      <a href="gallery.html">🖼️ Gallery</a>
+      <a href="blog.html">📝 Blog</a>
+    </nav>
+  </header>
 
-<main>
-  <p>Explore our collection of beautiful and creative images.</p>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1">
-    <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2">
-    <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3">
-    <img src="https://via.placeholder.com/300x200?text=Image+4" alt="Image 4">
-  </div>
-</main>
+  <main>
+    <h2>🎨 Featured Creations</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="https://source.unsplash.com/700x400/?art,painting" alt="Art 1">
+        <img src="https://source.unsplash.com/700x400/?nature,creative" alt="Art 2">
+        <img src="https://source.unsplash.com/700x400/?crafts,design" alt="Art 3">
+      </div>
+    </div>
+  </main>
 
-<footer>
-  <p>Made with ❤️ using GitHub</p>
-</footer>
+  <footer>
+    <p>Made with ❤️ using GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
+Contacts
+
