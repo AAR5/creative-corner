@@ -49,3 +49,28 @@ footer {
     margin: 0.5rem 0;
   }
 }
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ff6f61;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: pop 1s ease forwards;
+}
+
+.cta-button:hover {
+  background: #ff3b2e;
+  transform: scale(1.05);
+}
+
+/* Button pop-in animation */
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+Contacts
+
