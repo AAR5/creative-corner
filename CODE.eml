@@ -1,0 +1,301 @@
+Delivered-To: magdheera630@gmail.com
+Received: by 2002:a05:6124:4790:b0:3f6:2d43:3fc9 with SMTP id il16csp1370020vlb;
+        Tue, 3 Jun 2025 04:40:39 -0700 (PDT)
+X-Received: by 2002:a05:651c:b0d:b0:30c:50fd:9afe with SMTP id 38308e7fff4ca-32a8cd69223mr57600931fa.9.1748950839431;
+        Tue, 03 Jun 2025 04:40:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1748950839; cv=none;
+        d=google.com; s=arc-20240605;
+        b=QUxGcvxkjg6HQOA+91l/ken2qxrtdl5f9qfE7BQwBZzXwWo7liqtMEjnmv7K8rpuiQ
+         N/T+cJZZxZ/LPs7tN6pxLo2NZ0lrAhQcWlBSpw8pFhDz0EC/x7cm6HzvYKZdABre2LFZ
+         u9wN0L1Dlw7hHmHxfu6q60O0H1G4ukxrSwXsmI1gB53GffLbtIXSkqrflWVSPxNpf5h+
+         3p6rKhQFO6KKjDl1jK5oJ3UhAWMoJg9bk/YsKZq8/fIFk07aKcN40kT8vMv18PwRmO2V
+         ryChpz1U5PQPKsVpCZRxs1HFPXj4Gby/qTa2pRwc6ZqceIgtAdzIw5AiATtPq02Jq2uw
+         C8tw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Dj+DqhKXgejjcFVbjIhMmjaKSNbEtL+dKUS5//6Mw68=;
+        fh=0ZQDv14d15jRvyNaetfpHAEx0FqI4WwBx4dINshBZVA=;
+        b=IUev7+7RSstUVh9ZcFLtLRCSj0HZAcS2Xu1dLpO9PJI6bB0JGI9Kx52dgaUR/VMBUo
+         iIfyDp4Cr7YCL2ne1W2VxE1Fttj5EXRgTYTkRk+1ts8QCMeP7cV/YXRd3+phatGKPqgV
+         Y1T2Ta4D80xqItugaZbEgK0Xnn3c40Jzjur0FOjqFFPb3jjf9PNQT1/ZGsHwfxPTpiRC
+         z6VU4sUwmUhZplLaCzGF+PF6AMC71FBoJgKo0IUL/+OA1ZJsyNhXaLv+e5qcxf8xdeEt
+         dz+yqwYywMbRm9mI2avcPY3oVpYD3yUYjWFbyrZ5u4N4AOw1GBrz5rpr3+m295KLv6ZV
+         TSOA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Upw6YxuE;
+       spf=pass (google.com: domain of mauryaranjit448@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mauryaranjit448@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <mauryaranjit448@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 38308e7fff4ca-32a85b39cbcsor19942251fa.1.2025.06.03.04.40.39
+        for <magdheera630@gmail.com>
+        (Google Transport Security);
+        Tue, 03 Jun 2025 04:40:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mauryaranjit448@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Upw6YxuE;
+       spf=pass (google.com: domain of mauryaranjit448@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mauryaranjit448@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1748950838; x=1749555638; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Dj+DqhKXgejjcFVbjIhMmjaKSNbEtL+dKUS5//6Mw68=;
+        b=Upw6YxuETfSA4AXkuiNbstkfQ8/WRfBhm4J5sTj32DJW60Y5hq6l2GfqrLkPs288sN
+         2+eEgppJwUs0pFq7uCUbfRKh4XuTTn20vRYCjdLRiVZ4y9VunSKM7VsmkURTI5Y4b1Bt
+         OvXRt5sJ+IFj01gau0oz4n6uvivMzf6x+S9DKc0Wbv50HydPOEAdgdxCOcU10d4uTxZI
+         1O7JAg2tGNcn0CE+MdxFakCt45z8heF6+HNUFGzZIUcoT4vhXjaqD25tuI9leOwk11pK
+         h2T4uCjtNy0Or3XKEFH9i4bEHbD7sOlQELncAFGXw2ppTjFB+J1xWx6naOMAn7nY2FoX
+         1+Aw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1748950838; x=1749555638;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Dj+DqhKXgejjcFVbjIhMmjaKSNbEtL+dKUS5//6Mw68=;
+        b=nFlpXLMWh3ugbhhUHEZ8PKsgZYRKbZLpb13mg3HykfAUOLaIY2zdQu2Yamep1v7yyt
+         46HINT9AFbcTQGff+8lwH7oPr2XzU0ozOIgfl7Ib3mEK5s7qQHtPxXQtps/LaXsjfeVX
+         d8/sQkyKNC5Vclm9geBL6F7Sx269r/EcBczqb6WMKTCodT7wcq949+xYfWuCHas4mgHc
+         bsGJF+W7hV9cpZEc8ExTkfQr9Y4bEb+u+NiSR/Pjlbpk9NueW48jUe13ABlK7rLrpX2H
+         DgVXyH4OxwfjCUZddn5lDWPT8Xe24vmPkCOsRIBYBQtB/zG21ZclbVYu1rvIzIZf5sw1
+         MUzA==
+X-Gm-Message-State: AOJu0Yyxp456ffG3Ntlp4fb2heLajLLLCLomMPZwPN1IFYP5/ggnlmYw
+	ZOEsuOVzD7qcC9L+Co9DosMIZg3oWvMNnbpSW2GD3YwB3cpHzW5eJvYOq9eQQ80UIjXwCLjLCBj
+	ijKNhrhwmsmuDWBZTTgkMcCBMhtebEcU0bw==
+X-Gm-Gg: ASbGncsm7mmSSAWVLzDlZd97DmQOUi1YJQeyGZqjJrWcyl5eMkrEoL5qdKmgBWwk3xC
+	IxXSHGtlR47TrQ17XM7eWL9qoWkUwoImF9r/s1APYHNF9anhVigFWHfyb33vJLS9+196ffWNc1K
+	MZMZHDrL7aMl2l6X7/uKTD8z7dk8Ha+WhYmxQYPj9FaOGUBwXfWErs09VaP1olemDDRY4=
+X-Google-Smtp-Source: AGHT+IH4xW8afqgWpgm3LflIbOsOE/1jnR776fYjJDMvyOXE3xBId6VAU4ey2p6KLC0XpzFhjkfJnp1GLXC3lV99zRI=
+X-Received: by 2002:a05:651c:220b:b0:30b:c6fe:4529 with SMTP id
+ 38308e7fff4ca-32a8cd3b71emr53666601fa.8.1748950838233; Tue, 03 Jun 2025
+ 04:40:38 -0700 (PDT)
+MIME-Version: 1.0
+From: Ranjit Maurya <mauryaranjit448@gmail.com>
+Date: Tue, 3 Jun 2025 17:10:12 +0530
+X-Gm-Features: AX0GCFtL5AmM0qFpzb9lYpVQ8bQm69ZZurqG3-eDwufHaIHoALSpbII_5uJBGfg
+Message-ID: <CAGei9e4GbBVUUNqHYx-6bDMzhOVBCm_kdfDcwHGzJqRTdsce6g@mail.gmail.com>
+Subject: 
+To: raju maurya <magdheera630@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000714d320636a95963"
+
+--000000000000714d320636a95963
+Content-Type: text/plain; charset="UTF-8"
+
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between
+items-center">
+        <h1 class="text-2xl font-bold">My Blog</h1>
+        <nav class="space-x-4">
+          <a href="#home" class="hover:text-blue-600">Home</a>
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#blog" class="hover:text-blue-600">Blog</a>
+          <a href="#gallery" class="hover:text-blue-600">Gallery</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </nav>
+      </div>
+    </header><!-- Home Section -->
+<section id="home" class="py-20 text-center bg-blue-100">
+  <h2 class="text-4xl font-bold mb-4">Welcome to My Blog</h2>
+  <p class="text-lg">Sharing thoughts, stories and ideas.</p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-4 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+  <p class="text-gray-700 leading-relaxed">
+    I'm a passionate blogger who loves to share knowledge and experiences.
+This blog is my space to connect with people through writing.
+  </p>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-20 bg-gray-100 px-4">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Latest Posts</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <article class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">Sample Blog Post 1</h3>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit...</p>
+      </article>
+      <article class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">Sample Blog Post 2</h3>
+        <p class="text-gray-600">Curabitur ac leo nunc. Vestibulum et
+mauris vel ante...</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-20 px-4 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Gallery</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="https://via.placeholder.com/300" class="rounded shadow"
+alt="Placeholder" />
+    <img src="https://via.placeholder.com/300" class="rounded shadow"
+alt="Placeholder" />
+    <img src="https://via.placeholder.com/300" class="rounded shadow"
+alt="Placeholder" />
+    <img src="https://via.placeholder.com/300" class="rounded shadow"
+alt="Placeholder" />
+    <img src="https://via.placeholder.com/300" class="rounded shadow"
+alt="Placeholder" />
+    <img src="https://via.placeholder.com/300" class="rounded shadow"
+alt="Placeholder" />
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-blue-50 px-4">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Contact Me</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border
+border-gray-300 rounded" />
+      <input type="email" placeholder="Your Email" class="w-full p-3 border
+border-gray-300 rounded" />
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3
+border border-gray-300 rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded
+hover:bg-blue-700">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-6 bg-gray-800 text-white">
+  &copy; 2025 My Blog. All rights reserved.
+</footer>
+
+  </body>
+</html>
+
+--000000000000714d320636a95963
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">&lt;!DOCTYPE html&gt;&lt;html lang=3D&quot;en&quot;&gt;<d=
+iv dir=3D"auto">=C2=A0 &lt;head&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &l=
+t;meta charset=3D&quot;UTF-8&quot; /&gt;</div><div dir=3D"auto">=C2=A0 =C2=
+=A0 &lt;meta name=3D&quot;viewport&quot; content=3D&quot;width=3Ddevice-wid=
+th, initial-scale=3D1.0&quot; /&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &l=
+t;title&gt;My Blog&lt;/title&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;s=
+cript src=3D&quot;<a href=3D"https://cdn.tailwindcss.com">https://cdn.tailw=
+indcss.com</a>&quot;&gt;&lt;/script&gt;</div><div dir=3D"auto">=C2=A0 &lt;/=
+head&gt;</div><div dir=3D"auto">=C2=A0 &lt;body class=3D&quot;bg-gray-50 te=
+xt-gray-800&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;!-- Navbar -=
+-&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;header class=3D&quot;bg-whit=
+e shadow sticky top-0 z-50&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =
+=C2=A0 &lt;div class=3D&quot;max-w-7xl mx-auto px-4 py-4 flex justify-betwe=
+en items-center&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 &lt;h1 class=3D&quot;text-2xl font-bold&quot;&gt;My Blog&lt;/h1&gt;</di=
+v><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;nav class=3D&quot;space=
+-x-4&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &l=
+t;a href=3D&quot;#home&quot; class=3D&quot;hover:text-blue-600&quot;&gt;Hom=
+e&lt;/a&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;a=
+ href=3D&quot;#about&quot; class=3D&quot;hover:text-blue-600&quot;&gt;About=
+&lt;/a&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;a =
+href=3D&quot;#blog&quot; class=3D&quot;hover:text-blue-600&quot;&gt;Blog&lt=
+;/a&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;a hre=
+f=3D&quot;#gallery&quot; class=3D&quot;hover:text-blue-600&quot;&gt;Gallery=
+&lt;/a&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;a =
+href=3D&quot;#contact&quot; class=3D&quot;hover:text-blue-600&quot;&gt;Cont=
+act&lt;/a&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;/nav&g=
+t;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;/div&gt;</div><div dir=
+=3D"auto">=C2=A0 =C2=A0 &lt;/header&gt;&lt;!-- Home Section --&gt;</div><di=
+v dir=3D"auto">&lt;section id=3D&quot;home&quot; class=3D&quot;py-20 text-c=
+enter bg-blue-100&quot;&gt;</div><div dir=3D"auto">=C2=A0 &lt;h2 class=3D&q=
+uot;text-4xl font-bold mb-4&quot;&gt;Welcome to My Blog&lt;/h2&gt;</div><di=
+v dir=3D"auto">=C2=A0 &lt;p class=3D&quot;text-lg&quot;&gt;Sharing thoughts=
+, stories and ideas.&lt;/p&gt;</div><div dir=3D"auto">&lt;/section&gt;</div=
+><div dir=3D"auto"><br></div><div dir=3D"auto">&lt;!-- About Section --&gt;=
+</div><div dir=3D"auto">&lt;section id=3D&quot;about&quot; class=3D&quot;py=
+-20 px-4 max-w-4xl mx-auto&quot;&gt;</div><div dir=3D"auto">=C2=A0 &lt;h2 c=
+lass=3D&quot;text-3xl font-semibold mb-6&quot;&gt;About Me&lt;/h2&gt;</div>=
+<div dir=3D"auto">=C2=A0 &lt;p class=3D&quot;text-gray-700 leading-relaxed&=
+quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 I&#39;m a passionate blogger=
+ who loves to share knowledge and experiences. This blog is my space to con=
+nect with people through writing.</div><div dir=3D"auto">=C2=A0 &lt;/p&gt;<=
+/div><div dir=3D"auto">&lt;/section&gt;</div><div dir=3D"auto"><br></div><d=
+iv dir=3D"auto">&lt;!-- Blog Section --&gt;</div><div dir=3D"auto">&lt;sect=
+ion id=3D&quot;blog&quot; class=3D&quot;py-20 bg-gray-100 px-4&quot;&gt;</d=
+iv><div dir=3D"auto">=C2=A0 &lt;div class=3D&quot;max-w-5xl mx-auto&quot;&g=
+t;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;h2 class=3D&quot;text-3xl font-=
+semibold mb-6&quot;&gt;Latest Posts&lt;/h2&gt;</div><div dir=3D"auto">=C2=
+=A0 =C2=A0 &lt;div class=3D&quot;grid md:grid-cols-2 gap-8&quot;&gt;</div><=
+div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;article class=3D&quot;bg-white p-=
+6 rounded shadow&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 &lt;h3 class=3D&quot;text-xl font-bold mb-2&quot;&gt;Sample Blog Post 1=
+&lt;/h3&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;p class=
+=3D&quot;text-gray-600&quot;&gt;Lorem ipsum dolor sit amet, consectetur adi=
+piscing elit...&lt;/p&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;/=
+article&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;article class=
+=3D&quot;bg-white p-6 rounded shadow&quot;&gt;</div><div dir=3D"auto">=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 &lt;h3 class=3D&quot;text-xl font-bold mb-2&quot;&=
+gt;Sample Blog Post 2&lt;/h3&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 &lt;p class=3D&quot;text-gray-600&quot;&gt;Curabitur ac leo nunc=
+. Vestibulum et mauris vel ante...&lt;/p&gt;</div><div dir=3D"auto">=C2=A0 =
+=C2=A0 =C2=A0 &lt;/article&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;/di=
+v&gt;</div><div dir=3D"auto">=C2=A0 &lt;/div&gt;</div><div dir=3D"auto">&lt=
+;/section&gt;</div><div dir=3D"auto"><br></div><div dir=3D"auto">&lt;!-- Ga=
+llery Section --&gt;</div><div dir=3D"auto">&lt;section id=3D&quot;gallery&=
+quot; class=3D&quot;py-20 px-4 max-w-6xl mx-auto&quot;&gt;</div><div dir=3D=
+"auto">=C2=A0 &lt;h2 class=3D&quot;text-3xl font-semibold mb-6 text-center&=
+quot;&gt;Gallery&lt;/h2&gt;</div><div dir=3D"auto">=C2=A0 &lt;div class=3D&=
+quot;grid sm:grid-cols-2 md:grid-cols-3 gap-4&quot;&gt;</div><div dir=3D"au=
+to">=C2=A0 =C2=A0 &lt;img src=3D&quot;<a href=3D"https://via.placeholder.co=
+m/300">https://via.placeholder.com/300</a>&quot; class=3D&quot;rounded shad=
+ow&quot; alt=3D&quot;Placeholder&quot; /&gt;</div><div dir=3D"auto">=C2=A0 =
+=C2=A0 &lt;img src=3D&quot;<a href=3D"https://via.placeholder.com/300">http=
+s://via.placeholder.com/300</a>&quot; class=3D&quot;rounded shadow&quot; al=
+t=3D&quot;Placeholder&quot; /&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;=
+img src=3D&quot;<a href=3D"https://via.placeholder.com/300">https://via.pla=
+ceholder.com/300</a>&quot; class=3D&quot;rounded shadow&quot; alt=3D&quot;P=
+laceholder&quot; /&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;img src=3D&=
+quot;<a href=3D"https://via.placeholder.com/300">https://via.placeholder.co=
+m/300</a>&quot; class=3D&quot;rounded shadow&quot; alt=3D&quot;Placeholder&=
+quot; /&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;img src=3D&quot;<a hre=
+f=3D"https://via.placeholder.com/300">https://via.placeholder.com/300</a>&q=
+uot; class=3D&quot;rounded shadow&quot; alt=3D&quot;Placeholder&quot; /&gt;=
+</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;img src=3D&quot;<a href=3D"https:=
+//via.placeholder.com/300">https://via.placeholder.com/300</a>&quot; class=
+=3D&quot;rounded shadow&quot; alt=3D&quot;Placeholder&quot; /&gt;</div><div=
+ dir=3D"auto">=C2=A0 &lt;/div&gt;</div><div dir=3D"auto">&lt;/section&gt;</=
+div><div dir=3D"auto"><br></div><div dir=3D"auto">&lt;!-- Contact Section -=
+-&gt;</div><div dir=3D"auto">&lt;section id=3D&quot;contact&quot; class=3D&=
+quot;py-20 bg-blue-50 px-4&quot;&gt;</div><div dir=3D"auto">=C2=A0 &lt;div =
+class=3D&quot;max-w-xl mx-auto&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=
+=A0 &lt;h2 class=3D&quot;text-3xl font-semibold mb-6 text-center&quot;&gt;C=
+ontact Me&lt;/h2&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;form class=3D=
+&quot;space-y-4&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;i=
+nput type=3D&quot;text&quot; placeholder=3D&quot;Your Name&quot; class=3D&q=
+uot;w-full p-3 border border-gray-300 rounded&quot; /&gt;</div><div dir=3D"=
+auto">=C2=A0 =C2=A0 =C2=A0 &lt;input type=3D&quot;email&quot; placeholder=
+=3D&quot;Your Email&quot; class=3D&quot;w-full p-3 border border-gray-300 r=
+ounded&quot; /&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;textarea=
+ placeholder=3D&quot;Your Message&quot; rows=3D&quot;4&quot; class=3D&quot;=
+w-full p-3 border border-gray-300 rounded&quot;&gt;&lt;/textarea&gt;</div><=
+div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 &lt;button type=3D&quot;submit&quot; =
+class=3D&quot;bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700&qu=
+ot;&gt;Send&lt;/button&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;/form&g=
+t;</div><div dir=3D"auto">=C2=A0 &lt;/div&gt;</div><div dir=3D"auto">&lt;/s=
+ection&gt;</div><div dir=3D"auto"><br></div><div dir=3D"auto">&lt;!-- Foote=
+r --&gt;</div><div dir=3D"auto">&lt;footer class=3D&quot;text-center py-6 b=
+g-gray-800 text-white&quot;&gt;</div><div dir=3D"auto">=C2=A0 &amp;copy; 20=
+25 My Blog. All rights reserved.</div><div dir=3D"auto">&lt;/footer&gt;</di=
+v><div dir=3D"auto"><br></div><div dir=3D"auto">=C2=A0 &lt;/body&gt;</div><=
+div dir=3D"auto">&lt;/html&gt;</div></div>
+
+--000000000000714d320636a95963--
