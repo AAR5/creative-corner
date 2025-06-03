@@ -1,27 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Creative Corner - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      animation: slideDown 1s ease;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.2);
+      padding: 10px 20px;
+      margin: 5px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.4);
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      animation: fadeIn 3s ease;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.7);
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to Creative Corner</h1>
-  <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="contact.html">📞 Contact</a>
-  </nav>
-</header>
+  <header>
+    <h1>Welcome to Creative Corner</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="contact.html">📞 Contact</a>
+      <a href="gallery.html">🖼️ Gallery</a>
+      <a href="blog.html">📝 Blog</a>
+    </nav>
+  </header>
 
-<main>
-  <p>This is the home page of your simple website, now styled with CSS.</p>
-</main>
+  <main>
+    <h2>Explore Your Creativity!</h2>
+    <p>This is the home page of your beautifully styled website. Now with background image and animations to make it modern and engaging. Scroll through the Gallery or check our latest Blog posts to get inspired!</p>
+  </main>
 
-<footer>
-  <p>Made with ❤️ using GitHub</p>
-</footer>
+  <footer>
+    <p>Made with ❤️ by AAR5 using GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
+Contacts
+
+
 
